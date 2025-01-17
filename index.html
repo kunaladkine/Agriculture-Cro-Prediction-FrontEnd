@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Farm</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #google_translate_element {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px 10px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+    }
+
+    #google_translate_element select {
+      border: none;
+      background: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Agro Farm</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cropprediction.html">Crop Prediction</a></li>
+        <li class="nav-item">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </li>
+        <li class="nav-item ml-2">
+          <div id="google_translate_element"></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <!-- Image Slider with Description -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1>Welcome to Agro Farm</h1>
+        <p>Our platform is dedicated to helping farmers optimize their agricultural practices by providing the latest
+          tools, products, and insights. Explore our collection of cutting-edge farming equipment, advanced techniques,
+          and a wealth of knowledge designed to make your farming experience more efficient and profitable.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/p2.jpg" class="img-fluid rounded shadow" alt="Farming Image 1">
+      </div>
+    </div>
+  </div>
+
+  <!-- services provicde  -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row gy-4">
+      <!-- Service 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card service-card text-center h-100 p-3">
+          <div class="service-icon">
+            <i class="bi bi-gear-fill"></i>
+          </div>
+          <h5 class="service-title">Farmer Tools</h5>
+          <p class="card-text">Providing advanced tools tailored for modern farming needs to enhance productivity.</p>
+          <a href="tools.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card service-card text-center h-100 p-3">
+          <div class="service-icon">
+            <i class="bi bi-basket-fill"></i>
+          </div>
+          <h5 class="service-title">Farmer Products</h5>
+          <p class="card-text">Providing advanced products tailored for modern farming needs to enhance productivity.</p>
+          <a href="products.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card service-card text-center h-100 p-3">
+          <div class="service-icon">
+            <i class="bi bi-cloud-sun"></i>
+          </div>
+          <h5 class="service-title">Weather Insights</h5>
+          <p class="card-text">Accurate and real-time weather updates to help you plan your farming activities.</p>
+          <a href="/cropprediction.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card service-card text-center h-100 p-3">
+          <div class="service-icon">
+            <i class="bi bi-bar-chart-line"></i>
+          </div>
+          <h5 class="service-title">Crop Prediction</h5>
+          <p class="card-text">Stay informed about the latest market trends and product availability.</p>
+          <a href="/cropprediction.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>
+      <a href="index.html" class="text-white">Home</a> |
+      <a href="products.html" class="text-white">Products</a> |
+      <a href="tools.html" class="text-white">Tools</a> |
+      <a href="/cropprediction.html" class="text-white">Crop Prediction</a> |
+
+    </p>
+    <p>&copy; 2024 Agro Farm</p>
+  </footer>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.0/dist/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
